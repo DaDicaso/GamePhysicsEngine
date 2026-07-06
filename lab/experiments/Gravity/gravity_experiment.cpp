@@ -6,7 +6,8 @@
 
 namespace omni
 {
-  GravityExperiment::GravityExperiment(){
+  GravityExperiment::GravityExperiment()
+    : mGravity(Vector3(0.0f, -9.81f, 0.0f)){
 
   }
 
@@ -17,18 +18,21 @@ namespace omni
   void GravityExperiment::initialize(){
 
     //std::cout << "Particle address is initialized: " << &mParticle << std::endl;
-    mParticle.setPosition(0.0f, 5.0f, 0.0f);
+    mParticle.setPosition(-10.0f, 0.0f, 0.0f);
 
-    mParticle.setVelocity(0.0f, 0.0f, 0.0f);
+    mParticle.setVelocity(10.0f, 10.0f, 0.0f);
 
-    mParticle.setAcceleration(0.0f, -9.8f, 0.0f);
+   // mParticle.setAcceleration(0.0f, 0.0f, 0.0f);
+   
+   mParticle.setMass(1.0f);
+   
+   mParticle.setDamping(0.999f);
 
-    mParticle.setMass(1.0f);
-
-    mParticle.setDamping(0.999f);
+   mForceRegistry.add(&mParticle, &mGravity);
   }
 
   void GravityExperiment::update(float dt){
+    mForceRegistry.updateForces(dt);
     mParticle.integrate(dt);
     //std::cout << "Particle address in update: " << &mParticle << std::endl;
 

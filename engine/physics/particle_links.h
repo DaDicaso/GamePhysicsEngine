@@ -1,5 +1,5 @@
 #pragma once
-#include<engine/physics/particle.h>
+#include<engine/physics/particle/particle.h>
 #include<engine/physics/particle_contacts.h>
 
 /*

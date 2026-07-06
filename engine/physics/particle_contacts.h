@@ -1,5 +1,5 @@
 #pragma once
-#include<engine/physics/particle.h>
+#include<engine/physics/particle/particle.h>
 /*
 The contact has no callable function, it just holds the contact details
 To resolve a set of contacts, use the particle contact resolver class

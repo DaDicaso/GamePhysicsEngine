@@ -1,6 +1,6 @@
 #include<assert.h>
 #include<iostream>
-#include <engine/physics/particle.h>
+#include <engine/physics/particle/particle.h>
 
 using namespace omni;
 

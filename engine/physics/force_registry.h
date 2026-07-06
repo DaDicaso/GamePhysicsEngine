@@ -1,4 +1,5 @@
-#include<engine/physics/particle.h>
+#pragma once
+#include<engine/physics/particle/particle.h>
 #include<vector>
 
 namespace omni{

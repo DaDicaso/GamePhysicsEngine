@@ -32,7 +32,11 @@ set(ENGINE_SOURCES
     engine/core/window.cpp
     engine/renderer/renderer.cpp
     engine/core/time.cpp
-    engine/physics/particle.cpp
+    engine/physics/particle/particle.cpp
+
+    engine/physics/force/ParticleForceGenerator.cpp
+    engine/physics/force/ParticleGravity.cpp
+    engine/physics/force/ParticleForceRegistry.cpp
 )
 
 set(LAB_SOURCES

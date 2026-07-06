@@ -1,6 +1,7 @@
-#include<engine/physics/particle.h>
+#pragma once
+#include<engine/physics/particle/particle.h>
 #include<engine/physics/particle_contacts.h>
-#include<engine/physics/particle_force_registry.h>
+#include<engine/physics/force_registry.h>
 
 namespace omni{
   /**
