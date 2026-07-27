@@ -36,7 +36,17 @@ set(ENGINE_SOURCES
 
     engine/physics/force/ParticleForceGenerator.cpp
     engine/physics/force/ParticleGravity.cpp
+    engine/physics/force/ParticleDrag.cpp
+    engine/physics/force/ParticleSpring.cpp
     engine/physics/force/ParticleForceRegistry.cpp
+    engine/physics/force/ParticleAnchoredSpring.cpp
+    engine/physics/force/ParticleBungee.cpp
+    engine/physics/force/ParticleBuoyancy.cpp
+
+    engine/physics/contact/ParticleContact.cpp
+    engine/physics/contact/ParticleContactResolver.cpp
+
+    engine/debug/DebugDraw.cpp
 )
 
 set(LAB_SOURCES
@@ -47,7 +57,11 @@ set(LAB_SOURCES
 
     lab/experiments/empty/empty_experiment.cpp
 
-    lab/experiments/Gravity/gravity_experiment.cpp
+    lab/experiments/Gravity/GravityExperiment.cpp
+
+    lab/experiments/Spring/SpringExperiment.cpp
+
+    lab/experiments/ContactResolution/ContactResolutinoExperiment.cpp
 
 )
 

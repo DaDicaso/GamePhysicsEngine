@@ -3,6 +3,7 @@
 #include "lab/experiment.h"
 #include "engine/physics/particle/particle.h"
 #include "engine/physics/force/ParticleGravity.h"
+#include "engine/physics/force/ParticleDrag.h"
 #include "engine/physics/force/ParticleForceRegistry.h"
 
 namespace omni{
@@ -21,7 +22,10 @@ namespace omni{
     private:
     
       Particle mParticle;
+
       ParticleGravity mGravity;
+      ParticleDrag mDrag;
+
       ParticleForceRegistry mForceRegistry;
   };
 }

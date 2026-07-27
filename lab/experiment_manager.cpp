@@ -2,7 +2,10 @@
 #include "lab/experiment_manager.h"
 
 #include "lab/experiment.h"
-#include "lab/experiments/Gravity/gravity_experiment.h"
+#include "lab/experiments/Gravity/GravityExperiment.h"
+#include "lab/experiments/Spring/SpringExperiment.h"
+#include "lab/experiments/ContactResolution/ContactResolutionExperiment.h"
+
 
 #include "engine/renderer/renderer.h" 
 
@@ -10,7 +13,7 @@ namespace omni
 {
 
   ExperimentManager::ExperimentManager(){
-    setExperiment(std::make_unique<GravityExperiment>());
+    setExperiment(std::make_unique<ContactResolutionExperiment>());
   }
   
   ExperimentManager::~ExperimentManager(){

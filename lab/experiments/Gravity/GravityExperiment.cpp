@@ -1,13 +1,13 @@
 #include<iostream>
 
-#include "lab/experiments/Gravity/gravity_experiment.h"
+#include "lab/experiments/Gravity/GravityExperiment.h"
 
 #include "engine/renderer/renderer.h"
 
 namespace omni
 {
   GravityExperiment::GravityExperiment()
-    : mGravity(Vector3(0.0f, -9.81f, 0.0f)){
+    : mGravity(Vector3(0.0f, -9.81f, 0.0f)), mDrag(0.1f, 0.01f){
 
   }
 
@@ -29,6 +29,7 @@ namespace omni
    mParticle.setDamping(0.999f);
 
    mForceRegistry.add(&mParticle, &mGravity);
+   mForceRegistry.add(&mParticle, &mDrag);
   }
 
   void GravityExperiment::update(float dt){
