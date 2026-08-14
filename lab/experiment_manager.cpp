@@ -13,7 +13,7 @@ namespace omni
 {
 
   ExperimentManager::ExperimentManager(){
-    setExperiment(std::make_unique<ContactResolutionExperiment>());
+    setExperiment(std::make_unique<SpringExperiment>());
   }
   
   ExperimentManager::~ExperimentManager(){
