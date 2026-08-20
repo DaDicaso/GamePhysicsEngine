@@ -34,5 +34,7 @@ namespace omni
     private:
 
       Vector3 mParticleMovement[2];
+    // Grant access to resolver to update mParticleMovement and mPenetration
+    friend class ParticleContactResolver;
   };
 } // namespace omni

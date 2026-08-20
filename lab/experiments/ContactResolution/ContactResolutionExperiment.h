@@ -26,5 +26,6 @@ namespace omni
       ParticleContact mContact;
 
       ParticleContactResolver mResolver;
+
   };
 } // namespace omni

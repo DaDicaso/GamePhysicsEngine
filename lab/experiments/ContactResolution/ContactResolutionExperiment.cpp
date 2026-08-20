@@ -17,8 +17,11 @@ namespace omni
     mParticleA.setVelocity(3.0f, 0.0f, 0.0f);
     mParticleB.setVelocity(-3.0f, 0.0f, 0.0f);
 
-    mParticleA.setMass(1.0f);
-    mParticleB.setMass(1.0f);
+    mParticleA.setAcceleration(0.0f, 0.0f, 0.0f);
+    mParticleB.setAcceleration(0.0f, -9.86f, 0.0f);
+
+    mParticleA.setInverseMass(1.0f);
+    mParticleB.setInverseMass(1.0f);
 
     mParticleA.setDamping(0.99f);
     mParticleB.setDamping(0.99f);

@@ -16,7 +16,7 @@ namespace omni{
   }
 
   bool PhysicsLab::initialize(){
-    if(!mWindow.create(1200, 720, "Omni Physics Lab")){
+    if(!mWindow.create(1920, 1080, "Omni Physics Lab")){
       return false;
     }
 

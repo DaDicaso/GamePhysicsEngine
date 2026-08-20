@@ -16,8 +16,6 @@ namespace omni
       ) const override;
 
     public:
-
-      Particle* mParticle[2];
       real mLength;
   };
 } // namespace omni

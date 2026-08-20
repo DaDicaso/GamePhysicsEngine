@@ -46,6 +46,11 @@ set(ENGINE_SOURCES
     engine/physics/contact/ParticleContact.cpp
     engine/physics/contact/ParticleContactResolver.cpp
 
+    engine/physics/contact/ParticleLink.cpp
+    engine/physics/contact/ParticleCable.cpp
+    engine/physics/contact/ParticleRod.cpp
+
+
     engine/debug/DebugDraw.cpp
 )
 
@@ -61,7 +66,9 @@ set(LAB_SOURCES
 
     lab/experiments/Spring/SpringExperiment.cpp
 
-    lab/experiments/ContactResolution/ContactResolutinoExperiment.cpp
+    lab/experiments/ContactResolution/ContactResolutionExperiment.cpp
+    
+    lab/experiments/ConstraintPlayground/ConstraintExperiment.cpp
 
 )
 
