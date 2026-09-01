@@ -9,7 +9,7 @@ namespace omni
 {
   ConstraintExperiment::ConstraintExperiment()
     : mContactResolver(100),
-    mRod1(&mParticleA, &mParticleB, mRodLength),
+    mRod1(&mParticleA, &mParticleB, mRodLength),  
     mRod2(&mParticleB, &mParticleC, mRodLength),
     mRod3(&mParticleC, &mParticleD, mRodLength),
     mRod4(&mParticleD, &mParticleE, mRodLength),
@@ -35,7 +35,7 @@ namespace omni
     mParticleE.setMass(1.0f);
     mParticleF.setMass(1.0f);
 
-    mParticleA.setAcceleration(Vector3(10.0f, 1, 0.0f));
+    mParticleA.setAcceleration(Vector3(10.0f, 2, 0.0f));
     mParticleB.setAcceleration(Vector3(0.0f, 0.0f, 0.0f));
     mParticleC.setAcceleration(Vector3(0.0f, 0.0f, 0.0f));
     mParticleD.setAcceleration(Vector3(-10.0f, -1, 0.0f));

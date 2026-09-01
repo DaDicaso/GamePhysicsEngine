@@ -50,6 +50,7 @@ set(ENGINE_SOURCES
     engine/physics/contact/ParticleCable.cpp
     engine/physics/contact/ParticleRod.cpp
 
+    engine/physics/contact/ParticleContactDetector.cpp
 
     engine/debug/DebugDraw.cpp
 )
@@ -69,6 +70,8 @@ set(LAB_SOURCES
     lab/experiments/ContactResolution/ContactResolutionExperiment.cpp
     
     lab/experiments/ConstraintPlayground/ConstraintExperiment.cpp
+
+    lab/experiments/ContactDetectionExperiment/ContactDetectionExperiment.cpp
 
 )
 

@@ -26,5 +26,4 @@ namespace omni
 
     return disVec.magnitude();
   }
-
 } // namespace omni

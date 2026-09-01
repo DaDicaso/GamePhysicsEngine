@@ -2,10 +2,11 @@
 
 #include "engine/physics/particle/particle.h"
 #include "engine/physics/contact/ParticleContact.h"
+#include "engine/physics/contact/ParticleContactGenerator.h"
 
 namespace omni
 {
-  class ParticleLink{
+  class ParticleLink : public ParticleContactGenerator{
     
     public:
 
@@ -18,7 +19,7 @@ namespace omni
       virtual unsigned addContact(
         ParticleContact* contact, 
         unsigned limit
-      ) const = 0;
+      ) const override = 0;
       
       Particle* mParticle[2];
       

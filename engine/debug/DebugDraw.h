@@ -25,6 +25,13 @@ namespace omni
         const Color& color,
         float width
       );
+
+      void sphere(
+        DebugDraw& debug,
+        const Vector3& centre,
+        const real radius,
+        const Color& color
+      );
       
     private:
 

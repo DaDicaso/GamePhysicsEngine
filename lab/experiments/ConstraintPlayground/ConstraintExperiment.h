@@ -7,6 +7,7 @@
 #include"engine/physics/contact/ParticleRod.h"
 #include"engine/physics/contact/ParticleCable.h"
 #include"engine/physics/contact/ParticleContactResolver.h"
+#include "engine/physics/contact/ParticleContactDetector.h"
 
 
 namespace omni
