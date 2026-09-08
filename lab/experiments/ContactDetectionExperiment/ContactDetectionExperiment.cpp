@@ -23,8 +23,8 @@ namespace omni
     mParticleA.setAcceleration(5, 3, 0);
     mParticleB.setAcceleration(-5, -3, 0);
 
-    mParticleA.setDamping(0.8f);
-    mParticleB.setDamping(0.8f);
+    mParticleA.setDamping(0.99f);
+    mParticleB.setDamping(0.99f);
 
     mCollisionDetector.clear();
     mCollisionDetector.addSphere(&mParticleA, 1.0f);
